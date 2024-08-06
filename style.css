@@ -1,0 +1,151 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #FFBD39;
+    --secondary-color: #ffeb3b;
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --heading-color: #333333;
+    --link-color: #ff9800;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    background-color: var(--bg-color) !important;
+    font-family: "Poppins", Arial, sans-serif !important;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.yellow {
+    color: var(--primary-color);
+}
+
+/* Navbar Layout */
+a.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+a.nav-link {
+    font-size: 1em !important;
+    line-height: 1.8em !important;
+    padding: 1em;
+    color: var(--text-color);
+}
+
+a.nav-link.active {
+    color: var(--link-color) !important;
+}
+
+div.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 31.25em;
+}
+
+.carousel-item img {
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+div.carousel-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    width: fit-content;
+}
+
+.carousel-caption h1 {
+    overflow: hidden;
+    border-right: .1em solid var(--primary-color);
+    margin: 0 auto;
+    white-space: nowrap;
+    width: fit-content;
+    margin-left: 0em;
+    font-size: 3.75em !important;
+    font-weight: 800;
+    animation: 
+        typing 3s,
+        blink-caret .75s step-end infinite;
+}
+
+.carousel-caption-subtitle {
+    font-size: 2.5em;
+}
+
+/* Buttons */
+.call-to-action {
+    border-radius: 2.5em;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1.125em;
+    width: 6.875em;
+    padding: 1.5em 0em;
+    border: none;
+}
+
+.colored-bg-btn {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.transparent-bg-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+/* Animations */
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-color); }
+}
+
+/* Media Queries */
+@media(max-width: 992px) {
+    body {
+        font-size: 12px !important;
+    }
+    a.navbar-brand {
+        font-size: 2em;
+    }
+    .carousel-item img {
+        width: 100%;
+    }
+    .carousel-caption h1 {
+        font-size: 2.5em;
+    }
+    a.nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.2em !important;
+    }
+}
