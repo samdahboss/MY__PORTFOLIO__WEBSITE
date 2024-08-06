@@ -133,6 +133,9 @@ div.carousel-caption {
     a.navbar-brand {
         font-size: 2em;
     }
+    .carousel-item{
+        height:90vh;
+    }
     .carousel-item img {
         width: 100%;
     }
