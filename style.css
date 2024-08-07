@@ -9,6 +9,8 @@
   --text-color: #ffffff;
   --heading-color: #333333;
   --link-color: #ff9800;
+  --gray-color: #999999;
+  --section-background-title-color: rgb(255, 255, 255, 0.1);
 }
 
 /* Reset */
@@ -23,7 +25,7 @@ body {
   background-color: var(--bg-color) !important;
   font-family: "Poppins", Arial, sans-serif !important;
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--gray-color) !important;
 }
 
 .highlighted-text {
@@ -51,10 +53,10 @@ div.navbar-collapse {
   justify-content: flex-end;
 }
 
-/* welcome Styles */
+/* Welcome Styles */
 .welcome {
   position: relative;
-  height: 31.25em;
+  height: 90vh;
 }
 
 .introduction-picture {
@@ -96,8 +98,66 @@ div.welcome-caption-container {
   animation: typing 10s infinite, blink-caret 0.75s step-end infinite;
 }
 
+/*About Styles*/
+.about-container{
+    display: flex;
+}
+.about-text-container{
+    width: 50%;
+    padding: 0em 1em;
+}
+.about-text-container .container{
+    position: relative;
+    width: 100%;
+}
+.about-image{
+    margin-left: 0em;
+    width: 50%;
+}
+.about-title-background{
+    color: var(--section-background-title-color);
+    font-size: 5.6em;
+    font-weight: 900;
+    z-index: 0;
+    line-height: 1.5em;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+}
+.about-title-top{
+    display: block;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 3.125em;
+    font-weight: 700;
+    line-height: 4.6785rem;
+    z-index: 100;
+    margin-bottom: 0.5em;
+}
+.about-description{
+    font-size: 1em;
+}
+.about-list{
+    list-style-type: none;
+    text-align: left;
+    padding: 0em;
+}
+.about-list-item{
+    display: flex;
+    margin: 1em auto;
+}
+.about-list-item-label{
+    color: var(--text-color);
+    width: 20%;
+    font-weight: 600;
+}
+.cv-download-caption{
+    font-size: 1.25em;
+    color: var(--text-color);
+}
+
 /* Buttons */
-.call-to-action {
+.call-to-action,button.cv-download-btn{
   border-radius: 2.5em;
   font-size: 0.75em;
   font-weight: 600;
@@ -105,7 +165,10 @@ div.welcome-caption-container {
   border: none;
   letter-spacing: 0.1em;
 }
-
+button.cv-download-btn{
+    width: fit-content;
+    padding: 1.5em;
+}
 .colored-btn {
   background-color: var(--primary-color);
   color: var(--bg-color);
@@ -154,9 +217,6 @@ div.welcome-caption-container {
   a.navbar-brand {
     font-size: 2em;
   }
-  .welcome {
-    height: 90vh;
-  }
   .introduction-picture {
     width: 100%;
   }
@@ -171,5 +231,11 @@ div.welcome-caption-container {
 @media (max-width: 768px) {
   .welcome-caption h1 {
     font-size: 2.2em !important;
+  }
+  .about-image{
+    display: none;
+  }
+  .about-text-container{
+    width: 100%;
   }
 }
