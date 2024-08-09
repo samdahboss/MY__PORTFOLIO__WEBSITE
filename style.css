@@ -32,10 +32,29 @@ body {
   color: var(--primary-color);
 }
 
+header{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--bg-color);
+  transition: 5s;
+}
+main{
+  /* position: absolute; */
+  z-index: 0;
+}
+
+.section:not(.home){
+  padding: 6em 0em 0em;
+}
+
 /* Navbar Layout */
 a.navbar-brand {
   font-size: 1.5em;
   font-weight: 900;
+  margin-left: -10px;
 }
 
 a.nav-link {
@@ -148,7 +167,7 @@ div.welcome-caption-container {
 }
 .about-list-item-label{
     color: var(--text-color);
-    width: 20%;
+    width: 40%;
     font-weight: 600;
 }
 .cv-download-caption{
