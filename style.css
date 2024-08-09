@@ -49,6 +49,40 @@ main{
   padding: 6em 0em 0em;
 }
 
+/*Common Section Title Styles*/
+.title-text-container{
+  padding: 0em 1em;
+}
+
+.title-text-container .container{
+  position: relative;
+  width: 100%;
+}
+
+.title-text-background{
+  color: var(--section-background-title-color);
+  font-size: 5.6em;
+  font-weight: 900;
+  z-index: 0;
+  line-height: 1.5em;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+}
+
+.title-text-top{
+  display: block;
+  width: 100%;
+  color: var(--text-color);
+  font-size: 3.125em;
+  font-weight: 700;
+  line-height: 4.6785rem;
+  z-index: 100;
+  margin-bottom: 0.5em;
+}
+
+
 /* Navbar Layout */
 a.navbar-brand {
   font-size: 1.5em;
@@ -120,58 +154,59 @@ div.welcome-caption-container {
 .about-container{
     display: flex;
 }
+
 .about-text-container{
     width: 50%;
-    padding: 0em 1em;
 }
-.about-text-container .container{
-    position: relative;
-    width: 100%;
-}
-.about-image{
-    margin-left: 0em;
-    width: 50%;
-}
-.about-title-background{
-    color: var(--section-background-title-color);
-    font-size: 5.6em;
-    font-weight: 900;
-    z-index: 0;
-    line-height: 1.5em;
-    position: absolute;
-    top: 0em;
-    left: 0em;
-}
-.about-title-top{
-    display: block;
-    width: 100%;
-    color: var(--text-color);
-    font-size: 3.125em;
-    font-weight: 700;
-    line-height: 4.6785rem;
-    z-index: 100;
-    margin-bottom: 0.5em;
-}
-.about-description{
-    font-size: 1em;
-}
+
 .about-list{
     list-style-type: none;
     text-align: left;
     padding: 0em;
 }
+
 .about-list-item{
     display: flex;
     margin: 1em auto;
 }
+
 .about-list-item-label{
     color: var(--text-color);
     width: 40%;
     font-weight: 600;
 }
+
 .cv-download-caption{
     font-size: 1.25em;
     color: var(--text-color);
+}
+
+/*Resume Styles*/
+.resume-text-container .container{
+  width: 60%;
+}
+.resume-card{
+  position: relative;
+  padding: 3em;
+}
+.resume-card .fa-icon{
+  color: var(--primary-color);
+  font-size: 3em;
+  text-align: right;
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+}
+.resume-card span{
+  margin: 0.5em 0em;
+
+}
+.resume-card .date{
+  font-size: 1.625em;
+  font-weight: 900;
+}
+.resume-certification-name{
+  font-size: 1.625em;
 }
 
 /* Buttons */
@@ -186,6 +221,17 @@ div.welcome-caption-container {
 button.cv-download-btn{
     width: fit-content;
     padding: 1.5em;
+}
+.resume-cv-download-container{
+  margin-top: 2em !important;
+}
+.resume-cv-download{
+  margin: auto;
+}
+.resume-cv-download .cv-download-btn{
+  display: block;
+  padding: 2em 3em !important;
+  margin: auto !important;
 }
 .colored-btn {
   background-color: var(--primary-color);
@@ -244,6 +290,9 @@ button.cv-download-btn{
   a.nav-link {
     padding: 0.5rem 1rem;
   }
+  .resume-text-container .container{
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -254,6 +303,9 @@ button.cv-download-btn{
     display: none;
   }
   .about-text-container{
+    width: 100%;
+  }
+  .resume-text-container .container{
     width: 100%;
   }
 }

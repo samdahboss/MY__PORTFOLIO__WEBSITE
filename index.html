@@ -17,6 +17,13 @@
         rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous"
     />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
     <title>Samuel Olawumi -Portfolio</title>
 </head>
 <body>
@@ -69,16 +76,16 @@
             </section>
             <section class="about section" id="about">
                 <div class="about-container container">
-                    <img class="about-image" src="./images/casual-pic2.png"/>
-                    <div class="about-text-container">
+                    <img class="about-image col-md-6" src="./images/casual-pic2.png"/>
+                    <div class="about-text-container title-text-container col-md-6">
                         <div class="container">
-                            <h1 class="about-title-top">
+                            <h1 class="title-text-top">
                                 About Me
                             </h1>
-                            <h1 class="about-title-background">
+                            <h1 class="title-text-background">
                                 About
                             </h1>
-                            <p class="about-description">
+                            <p class="title-text-description">
                                 I am a skilled frontend web developer specializing in
                                 creating responsive, user-friendly websites with modern
                                 technologies and creative design.
@@ -124,7 +131,135 @@
                     </div>
                 </div>
             </section>
-            
+            <section class="resume section" id="resume">
+                <div class="resume-container container">
+                    <div class="resume-text-container title-text-container pb-5 px-4">
+                        <div class="container">
+                            <h1 class="title-text-top text-center">
+                                Resume
+                            </h1>
+                            <h1 class="title-text-background text-center">
+                                Resume
+                            </h1>
+                            <p class="resume-description">
+                                I am a skilled frontend web developer specializing in
+                                creating responsive, user-friendly websites with modern
+                                technologies and creative design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resume-cards-container row">
+                        <div class="col-md-6">
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class="fa-solid fa-laptop-code fa-icon"></i>
+                                <span class="highlighted-text date">July, 2024</span>
+                                <h2 class="resume-certification-name">Software Development</h2>
+                                <span class="resume-institution-name highlighted-text">SPRINGPOD, UK</span>
+                                <p class="resume-certification-description">
+                                    I participated in Springpod's Software Development Virtual Work 
+                                    Experience, gaining a solid understanding of software development 
+                                    concepts, career pathways, and necessary skills. I applied this 
+                                    knowledge through quizzes and activities, interacted with industry 
+                                    professionals in webinars, and learned key employability and transferable
+                                     skills aligned with employer expectations.
+                                </p>
+                            </div>
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class="fa-brands fa-free-code-camp fa-icon"></i>
+                                <span class="highlighted-text date">May, 2024</span>
+                                <h2 class="resume-certification-name">Legacy JavaScript Algorithms and Data Structures</h2>
+                                <span class="resume-institution-name highlighted-text">FREECODECAMP</span>
+                                <p class="resume-certification-description">
+                                    I completed the JavaScript Algorithms and Data Structures certification 
+                                    on freeCodeCamp, where I learned core JavaScript concepts, including ES6, 
+                                    object-oriented programming, and functional programming. I also gained proficiency
+                                    in working with algorithms, data structures, and handling complex coding challenges
+                                    effectively.
+                                </p>
+                            </div>
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class="fa-brands fa-js fa-icon"></i>
+                                <span class="highlighted-text date">August, 2023 </span>
+                                <h2 class="resume-certification-name">JavaScript Intermediate</h2>
+                                <span class="resume-institution-name highlighted-text">SOLOLEARN</span>
+                                <p class="resume-certification-description">
+                                    In the "JavaScript Intermediate" course on SoloLearn, I advanced my 
+                                    understanding of JavaScript by diving into more complex topics such as
+                                    object-oriented programming, asynchronous programming, DOM manipulation,
+                                    and handling events. The course also covered best practices in coding,
+                                    enhancing my ability to build dynamic and interactive web applications.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class="fa-solid fa-icon fa-globe"></i>
+                                <span class="highlighted-text date">July, 2024</span>
+                                <h2 class="resume-certification-name">HTML, CSS, and JavaScript for Web Developers</h2>
+                                <span class="resume-institution-name highlighted-text">JOHN HOPKINS UNIVERSITY, US</span>
+                                <p class="resume-certification-description">
+                                    I completed a specialization in HTML, CSS, and JavaScript 
+                                    for Web Developers, mastering web development essentials like HTML5,
+                                    CSS3, responsive design, and JavaScript. I learned to build dynamic
+                                    web applications with server-side functionality, covering topics from
+                                    static site coding to using Ajax for interactive web apps.
+                                </p>
+                            </div>
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class="fa-brands fa-python fa-icon"></i>
+                                <span class="highlighted-text date">March, 2024</span>
+                                <h2 class="resume-certification-name">Introduction to Software Engineering</h2>
+                                <span class="resume-institution-name highlighted-text">IBM VIA COURSERA</span>
+                                <p class="resume-certification-description">
+                                    In the IBM "Introduction to Software Engineering" course,
+                                    I learned the fundamentals of software engineering, including 
+                                    software development methodologies, project management principles,
+                                    and the software development lifecycle. The course also covered best 
+                                    practices for design, testing, and maintenance, preparing me for real-world
+                                    software engineering roles
+                                </p>
+                            </div>
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class=" fa-brands fa-free-code-camp fa-icon"></i>
+                                <span class="highlighted-text date">August, 2024</span>
+                                <h2 class="resume-certification-name">Responsive Web Design</h2>
+                                <span class="resume-institution-name highlighted-text">FREECODECAMP</span>
+                                <p class="resume-certification-description">
+                                    In FreeCodeCamp's Responsive Web Design course, I learned how to build web pages that seamlessly adapt to different screen sizes and devices. I mastered using flexible layouts, CSS media queries, and fluid grids to create responsive designs. The course also enhanced my skills in HTML, CSS, Flexbox, and Grid, ensuring that my web pages look and function well on desktops, tablets, and mobile phones.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                                <i class="fa-solid fa-graduation-cap fa-icon"></i>
+                                <span class="highlighted-text date">September 2022 - Present </span>
+                                <h2 class="resume-certification-name">Bachelor's Degree in Software Engineering</h2>
+                                <span class="resume-institution-name highlighted-text">MOUNTAIN TOP UNIVERSITY, NIGERIA</span>
+                                <p class="resume-certification-description">
+                                    Since September 2022, I've been pursuing a Bachelor's Degree 
+                                    in Software Engineering at Mountain Top University, where I've gained
+                                    a solid foundation in core programming languages like Python and JavaScript.
+                                     I've studied algorithms and data structures, which have enhanced my problem-solving
+                                    abilities. My coursework has included software development methodologies,
+                                    such as Agile and DevOps, and system design principles that emphasize scalability and efficiency.
+                                    I've worked on several projects, including web and mobile applications, 
+                                    where I've applied my knowledge of databases and user interface design. This hands-on experience 
+                                    has prepared me to address real-world software engineering challenges effectively.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-cv-download-container row">
+                        <div class="resume-cv-download col-md-6">
+                            <a href="./samuel_resume.pdf" download="samuel_resume">
+                                <button class="colored-btn cv-download-btn">
+                                    DOWNLOAD CV
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <script 
