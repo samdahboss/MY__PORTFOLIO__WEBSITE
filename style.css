@@ -39,7 +39,6 @@ header{
   width: 100%;
   z-index: 100;
   background-color: var(--bg-color);
-  transition: 5s;
 }
 main{
   /* position: absolute; */
