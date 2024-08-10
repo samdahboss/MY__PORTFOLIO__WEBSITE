@@ -1,6 +1,5 @@
 /* Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 /* Variables */
 :root {
   --primary-color: #ffbd39;
@@ -81,7 +80,9 @@ main{
   z-index: 100;
   margin-bottom: 0.5em;
 }
-
+.title-text-description{
+  text-align: center;
+}
 
 /* Navbar Layout */
 a.navbar-brand {
@@ -188,6 +189,11 @@ div.welcome-caption-container {
 .resume-card{
   position: relative;
   padding: 3em;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.resume-card:hover{
+  transform: scale(1.02);
 }
 .resume-card .fa-icon{
   color: var(--primary-color);
@@ -209,6 +215,45 @@ div.welcome-caption-container {
   font-size: 1.625em;
 }
 
+/*Services Styles*/
+.services-card{
+  background-color: var(--section-background-title-color) !important;
+  color: var(--text-color);
+  padding: 2em;
+  margin: 1em 0em !important;
+  transition: transform 0.3s ease-in-out, background-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+.services-card:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--bg-color);
+  transform: scale(1.05);
+}
+.services-card:hover .services-icon{
+  color: var(--text-color) ;
+}
+.services-card:hover .services-card-line{
+  border: 1px solid var(--bg-color);
+}
+.services-card-icon{
+  display: flex;
+  justify-content: center;
+}
+.services-card-icon .services-icon{
+  font-size: 5em;
+  color: var(--primary-color);
+}
+.services-card-description{
+  font-size: 0.8125em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.services-card-line{
+  width: 3em;
+  margin: auto;
+  border: 1px solid var(--primary-color);
+  opacity: 1;
+}
 /* Buttons */
 .call-to-action,button.cv-download-btn{
   border-radius: 2.5em;
