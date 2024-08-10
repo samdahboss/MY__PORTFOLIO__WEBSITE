@@ -354,7 +354,7 @@ button.cv-download-btn {
   margin: auto !important;
 }
 .contact-submit{
-  margin-left: 4em;
+  margin-left: 2em;
 }
 .colored-btn {
   background-color: var(--primary-color);
@@ -433,5 +433,8 @@ button.cv-download-btn {
   }
   .resume-text-container .container {
     width: 100%;
+  }
+  .title-text-description {
+    display: none;
   }
 }
