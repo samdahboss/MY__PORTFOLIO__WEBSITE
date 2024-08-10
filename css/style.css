@@ -254,6 +254,27 @@ div.welcome-caption-container {
   border: 1px solid var(--primary-color);
   opacity: 1;
 }
+
+/*Skills Styles*/
+.skill{
+  padding: 0em 1em 2em;
+}
+.skill-caption{
+  font-size: 1.25em;
+  color: var(--text-color);
+  position: relative;
+}
+.skill-caption .percentage{
+  position: absolute;
+  right: 0em;
+}
+.skill-progress-bar{
+  height: 1em !important;
+}
+.skill-progress-bar .progress-bar{
+  background-color: var(--primary-color);
+}
+
 /* Buttons */
 .call-to-action,button.cv-download-btn{
   border-radius: 2.5em;
