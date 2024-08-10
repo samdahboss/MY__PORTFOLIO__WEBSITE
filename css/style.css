@@ -31,7 +31,7 @@ body {
   color: var(--primary-color);
 }
 
-header{
+header {
   position: relative;
   left: 0;
   top: 0;
@@ -39,26 +39,26 @@ header{
   z-index: 100;
   background-color: var(--bg-color);
 }
-main{
+main {
   /* position: absolute; */
   z-index: 0;
 }
 
-.section:not(.home){
+.section:not(.home) {
   padding: 6em 0em 0em;
 }
 
 /*Common Section Title Styles*/
-.title-text-container{
+.title-text-container {
   padding: 0em 1em;
 }
 
-.title-text-container .container{
+.title-text-container .container {
   position: relative;
   width: 100%;
 }
 
-.title-text-background{
+.title-text-background {
   color: var(--section-background-title-color);
   font-size: 5.6em;
   font-weight: 900;
@@ -70,7 +70,7 @@ main{
   width: 100%;
 }
 
-.title-text-top{
+.title-text-top {
   display: block;
   width: 100%;
   color: var(--text-color);
@@ -80,7 +80,7 @@ main{
   z-index: 100;
   margin-bottom: 0.5em;
 }
-.title-text-description{
+.title-text-description {
   text-align: center;
 }
 
@@ -152,50 +152,50 @@ div.welcome-caption-container {
 }
 
 /*About Styles*/
-.about-container{
-    display: flex;
+.about-container {
+  display: flex;
 }
 
-.about-text-container{
-    width: 50%;
+.about-text-container {
+  width: 50%;
 }
 
-.about-list{
-    list-style-type: none;
-    text-align: left;
-    padding: 0em;
+.about-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0em;
 }
 
-.about-list-item{
-    display: flex;
-    margin: 1em auto;
+.about-list-item {
+  display: flex;
+  margin: 1em auto;
 }
 
-.about-list-item-label{
-    color: var(--text-color);
-    width: 40%;
-    font-weight: 600;
+.about-list-item-label {
+  color: var(--text-color);
+  width: 40%;
+  font-weight: 600;
 }
 
-.cv-download-caption{
-    font-size: 1.25em;
-    color: var(--text-color);
+.cv-download-caption {
+  font-size: 1.25em;
+  color: var(--text-color);
 }
 
 /*Resume Styles*/
-.resume-text-container .container{
+.resume-text-container .container {
   width: 60%;
 }
-.resume-card{
+.resume-card {
   position: relative;
   padding: 3em;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
-.resume-card:hover{
+.resume-card:hover {
   transform: scale(1.02);
 }
-.resume-card .fa-icon{
+.resume-card .fa-icon {
   color: var(--primary-color);
   font-size: 3em;
   text-align: right;
@@ -203,24 +203,30 @@ div.welcome-caption-container {
   right: 1em;
   top: 0.5em;
 }
-.resume-card span{
+.resume-card span {
   margin: 0.5em 0em;
-
 }
-.resume-card .date{
+.resume-cv-download-container {
+  margin-top: 2em !important;
+}
+.resume-cv-download {
+  margin: auto;
+}
+.resume-card .date {
   font-size: 1.625em;
   font-weight: 900;
 }
-.resume-certification-name{
+.resume-certification-name {
   font-size: 1.625em;
 }
 
 /*Services Styles*/
-.services-card{
+.services-card {
+  display: block;
   background-color: var(--section-background-title-color) !important;
   color: var(--text-color);
   padding: 2em;
-  margin: 1em 0em !important;
+  margin: 1em auto !important;
   transition: transform 0.3s ease-in-out, background-color 0.5s, color 0.5s;
   cursor: pointer;
 }
@@ -229,26 +235,26 @@ div.welcome-caption-container {
   color: var(--bg-color);
   transform: scale(1.05);
 }
-.services-card:hover .services-icon{
-  color: var(--text-color) ;
+.services-card:hover .services-icon {
+  color: var(--text-color);
 }
-.services-card:hover .services-card-line{
+.services-card:hover .services-card-line {
   border: 1px solid var(--bg-color);
 }
-.services-card-icon{
+.services-card-icon {
   display: flex;
   justify-content: center;
 }
-.services-card-icon .services-icon{
+.services-card-icon .services-icon {
   font-size: 5em;
   color: var(--primary-color);
 }
-.services-card-description{
+.services-card-description {
   font-size: 0.8125em;
   text-align: center;
   letter-spacing: 2px;
 }
-.services-card-line{
+.services-card-line {
   width: 3em;
   margin: auto;
   border: 1px solid var(--primary-color);
@@ -256,27 +262,81 @@ div.welcome-caption-container {
 }
 
 /*Skills Styles*/
-.skill{
+.skill {
   padding: 0em 1em 2em;
 }
-.skill-caption{
+.skill-caption {
   font-size: 1.25em;
   color: var(--text-color);
   position: relative;
 }
-.skill-caption .percentage{
+.skill-caption .percentage {
   position: absolute;
   right: 0em;
 }
-.skill-progress-bar{
+.skill-progress-bar {
   height: 1em !important;
 }
-.skill-progress-bar .progress-bar{
+.skill-progress-bar .progress-bar {
   background-color: var(--primary-color);
 }
 
+/*Projects Styles*/
+
+/*Contact Styles*/
+.contact-card .card {
+  background-color: transparent;
+  text-align: center;
+  color: var(--text-color);
+  padding: 1em 1em 3em !important;
+  height: 100%;
+}
+.contact-card-icon {
+  display: flex;
+  background-color: var(--section-background-title-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  width: 6em;
+  height: 6em;
+  margin: 0em auto 2em;
+}
+.contact-card-icon span {
+  font-size: 2em;
+}
+.contact-card-title {
+  font-size: 1.0625em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.contact-card-description a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1em;
+}
+.contact-form-container{
+  width: 80%;
+  margin: auto;
+}
+.contact-form {
+  display: flex;
+  background-color: #f8f9fa;
+  padding: 1em 1em 2em;
+}
+.contact-form .contact-input,
+.contact-form .contact-textarea {
+  width: 90%;
+  margin: 0.5em auto;
+  padding: 1em;
+}
+.contact-form-img {
+  width: 100%;
+}
+
 /* Buttons */
-.call-to-action,button.cv-download-btn{
+.call-to-action,
+button.cv-download-btn {
   border-radius: 2.5em;
   font-size: 0.75em;
   font-weight: 600;
@@ -284,20 +344,17 @@ div.welcome-caption-container {
   border: none;
   letter-spacing: 0.1em;
 }
-button.cv-download-btn{
-    width: fit-content;
-    padding: 1.5em;
+button.cv-download-btn {
+  width: fit-content;
+  padding: 1.5em;
 }
-.resume-cv-download-container{
-  margin-top: 2em !important;
-}
-.resume-cv-download{
-  margin: auto;
-}
-.resume-cv-download .cv-download-btn{
+.resume-cv-download .cv-download-btn {
   display: block;
   padding: 2em 3em !important;
   margin: auto !important;
+}
+.contact-submit{
+  margin-left: 4em;
 }
 .colored-btn {
   background-color: var(--primary-color);
@@ -356,8 +413,11 @@ button.cv-download-btn{
   a.nav-link {
     padding: 0.5rem 1rem;
   }
-  .resume-text-container .container{
+  .resume-text-container .container {
     width: 70%;
+  }
+  .contact-form-container{
+    width: 100%;
   }
 }
 
@@ -365,13 +425,13 @@ button.cv-download-btn{
   .welcome-caption h1 {
     font-size: 2.2em !important;
   }
-  .about-image{
+  .about-image {
     display: none;
   }
-  .about-text-container{
+  .about-text-container {
     width: 100%;
   }
-  .resume-text-container .container{
+  .resume-text-container .container {
     width: 100%;
   }
 }
