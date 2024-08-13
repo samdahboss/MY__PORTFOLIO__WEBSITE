@@ -191,9 +191,10 @@ div.welcome-caption-container {
   padding: 3em;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  opacity: .6;
 
   animation: fade-in linear;
-  animation-timeline: view(100vh 0vh);
+  animation-timeline: view(50vh 0vh);
 }
 .resume-card:hover {
   transform: scale(1.02);
