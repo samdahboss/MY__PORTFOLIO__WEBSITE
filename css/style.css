@@ -191,6 +191,9 @@ div.welcome-caption-container {
   padding: 3em;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+
+  animation: fade-in linear;
+  animation-timeline: view(100vh 0vh);
 }
 .resume-card:hover {
   transform: scale(1.02);
@@ -229,6 +232,9 @@ div.welcome-caption-container {
   margin: 1em auto !important;
   transition: transform 0.3s ease-in-out, background-color 0.5s, color 0.5s;
   cursor: pointer;
+
+  animation: fade-in linear;
+  animation-timeline: view(90vh 0vh);
 }
 .services-card:hover {
   background-color: var(--primary-color) !important;
@@ -456,6 +462,11 @@ button.cv-download-btn {
   }
 }
 
+/*the fade-in effect*/
+@keyframes fade-in{
+  0%{scale: .7; opacity: 0; }
+  100%{scale: 1; opacity: 1;}
+}
 /* Media Queries */
 @media (max-width: 992px) {
   body {
