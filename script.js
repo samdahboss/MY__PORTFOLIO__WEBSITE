@@ -73,3 +73,26 @@ function resetNavPosition() {
   // reset navbar position
   getElement("header").style.position = "relative";
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var progressBars = document.querySelectorAll('.progress.skill-progress-bar .progress-bar');
+
+  // Remove the initial width
+  progressBars.forEach(function(bar) {
+    var width = bar.style.width;
+    bar.style.width = '0';
+    bar.setAttribute('data-width', width); // Store the original width in a data attribute
+  });
+
+  document.addEventListener("scroll", function() {
+    progressBars.forEach(function(bar) {
+      var position = bar.getBoundingClientRect();
+
+      // Check if the progress bar is within the viewport
+      if (position.top < window.innerHeight && position.bottom >= 0 && bar.style.width === '0px') {
+        bar.style.width = bar.getAttribute('data-width');
+      }
+    });
+  });
+});
+
