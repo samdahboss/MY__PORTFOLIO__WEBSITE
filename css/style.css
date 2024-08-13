@@ -512,13 +512,5 @@ button.cv-download-btn {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
-  div.footer-social-links{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .footer-social-icon{
-    display: flex;
-    justify-content: center;
-  }
 
 }
