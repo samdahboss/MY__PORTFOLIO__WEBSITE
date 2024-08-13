@@ -334,6 +334,66 @@ div.welcome-caption-container {
   width: 100%;
 }
 
+/*Footer Styles*/
+.footer-container{
+  padding: 5em 0em;
+}
+.footer-info{
+  margin-bottom: 2em;
+}
+.footer-heading{
+  font-size: 1.325em;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1em;
+}
+.footer-list{
+  padding: 0em;
+}
+.footer-list-item{
+  list-style-type: none;
+  margin: 0.5em 0em;
+  font-size: 1em;
+}
+.footer-list-item:hover{
+  color: var(--text-color);
+}
+.footer-list-item-link{
+  text-decoration: none;
+  color: var(--gray-color);
+}
+.footer-list-item-link:hover{
+  color: var(--text-color);
+}
+.footer-list-item-icon{
+  margin-right: 0.5em;
+}
+.footer-social-links{
+  margin: 2em 0em;
+}
+.footer-social-icon-link{
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--heading-color);
+  border-radius: 50%;
+  padding: 1em;
+  width: 3em;
+  height: 3em;
+  transition: .5s;
+}
+.footer-social-icon-link:hover{
+  color: var(--heading-color);
+  background-color: var(--text-color);
+}
+.footer-social-icon span{
+  font-size: 1.625em;
+}
+.footer-copyright-statement{
+  text-align: center;
+}
 /* Buttons */
 .call-to-action,
 button.cv-download-btn {
@@ -354,7 +414,7 @@ button.cv-download-btn {
   margin: auto !important;
 }
 .contact-submit{
-  margin-left: 2em;
+  margin: auto;
 }
 .colored-btn {
   background-color: var(--primary-color);
@@ -437,4 +497,17 @@ button.cv-download-btn {
   .title-text-description {
     display: none;
   }
+  div.footer-info, div.contact-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  div.footer-social-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-social-icon{
+    display: flex;
+    justify-content: center;
+  }
+
 }
