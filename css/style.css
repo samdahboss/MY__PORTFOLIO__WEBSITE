@@ -307,6 +307,9 @@ div.welcome-caption-container {
   width: 6em;
   height: 6em;
   margin: 0em auto 2em;
+
+  animation: fade-in linear;
+  animation-timeline: view(50vh 0vh);
 }
 .contact-card-icon span {
   font-size: 2em;
