@@ -194,7 +194,7 @@ div.welcome-caption-container {
   opacity: .6;
 
   animation: fade-in linear;
-  animation-timeline: view(50vh 0vh);
+  animation-timeline: view(60vh 0vh);
 }
 .resume-card:hover {
   transform: scale(1.02);
@@ -289,6 +289,26 @@ div.welcome-caption-container {
 }
 
 /*Projects Styles*/
+.project-tile{
+ position: relative;
+}
+.project-tile-iframe{
+  min-height: 300px;
+  z-index: 0;
+  width: 100%;
+}
+.project-tile-cover-sheet{
+  display: flex;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #09060062;
+  justify-content: center;
+  align-items: center;
+}
 
 /*Contact Styles*/
 .contact-card .card {
@@ -493,6 +513,9 @@ button.cv-download-btn {
   }
   .contact-form-container{
     width: 100%;
+  }
+  .resume-card{
+    animation-timeline: view(50vh 0vh);
   }
 }
 
