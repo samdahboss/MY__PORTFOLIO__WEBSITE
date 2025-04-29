@@ -279,6 +279,18 @@ div.welcome-caption-container {
 .skill {
   padding: 0em 1em 2em;
 }
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 icons per row on mobile */
+  }
+}
 .skill-caption {
   font-size: 1.25em;
   color: var(--text-color);
