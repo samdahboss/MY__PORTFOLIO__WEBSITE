@@ -74,25 +74,52 @@ function resetNavPosition() {
   getElement("header").style.position = "relative";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  var progressBars = document.querySelectorAll('.progress.skill-progress-bar .progress-bar');
+document.addEventListener("DOMContentLoaded", function () {
+  var progressBars = document.querySelectorAll(
+    ".progress.skill-progress-bar .progress-bar"
+  );
 
   // Remove the initial width
-  progressBars.forEach(function(bar) {
+  progressBars.forEach(function (bar) {
     var width = bar.style.width;
-    bar.style.width = '0';
-    bar.setAttribute('data-width', width); // Store the original width in a data attribute
+    bar.style.width = "0";
+    bar.setAttribute("data-width", width); // Store the original width in a data attribute
   });
 
-  document.addEventListener("scroll", function() {
-    progressBars.forEach(function(bar) {
+  document.addEventListener("scroll", function () {
+    progressBars.forEach(function (bar) {
       var position = bar.getBoundingClientRect();
 
       // Check if the progress bar is within the viewport
-      if (position.top < window.innerHeight && position.bottom >= 0 && bar.style.width === '0px') {
-        bar.style.width = bar.getAttribute('data-width');
+      if (
+        position.top < window.innerHeight &&
+        position.bottom >= 0 &&
+        bar.style.width === "0px"
+      ) {
+        bar.style.width = bar.getAttribute("data-width");
       }
     });
   });
 });
 
+import { EMAILJS_CONFIG } from "./config.js";
+emailjs.init(EMAILJS_CONFIG.USER_ID);
+
+document.getElementById("contact-form").addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Collect form data
+  const serviceID = EMAILJS_CONFIG.SERVICE_ID; // Replace with your EmailJS service ID
+  const templateID = EMAILJS_CONFIG.TEMPLATE_ID; // Replace with your EmailJS template ID
+
+  emailjs.sendForm(serviceID, templateID, event.target).then(
+    function () {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset(); // Reset the form
+    },
+    function (error) {
+      alert("Failed to send message. Please try again later.");
+      console.error("EmailJS Error:", error);
+    }
+  );
+});
