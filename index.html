@@ -1,794 +1,922 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        rel="shortcut icon" 
-        href="./images/logo.png" 
-        type="image/x-icon"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <link 
-        rel="stylesheet" 
-        href="./css/style.css"
-    />
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous"
-    />
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/flaticon.css">
-    <link rel="stylesheet" href="./css/icomoon.css">
-    <link rel="stylesheet" href="./css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/flaticon.css" />
+    <link rel="stylesheet" href="./css/icomoon.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
 
     <title>Samuel Olawumi -Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="header-container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">JESUJOBA</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="navbar-nav">
-                          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                          <a class="nav-link" href="#about">About</a>
-                          <a class="nav-link" href="#resume">Resume</a>
-                          <a class="nav-link" href="#services">Services</a>
-                          <a class="nav-link" href="#skills">Skills</a>
-                          <a class="nav-link" href="#projects">Projects</a>
-                          <a class="nav-link" href="#contact">Contact</a>
-                        </div>
-                      </div>
-                    </div>
-                </nav>
+      <header>
+        <div class="header-container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">JESUJOBA</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#resume">Resume</a>
+                  <a class="nav-link" href="#services">Services</a>
+                  <a class="nav-link" href="#skills">Skills</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </div>
+              </div>
             </div>
-        </header>
-        <main>
-            <section class="home section" id="home">
-                    <div class="home-container">
-                        <div class="welcome">
-                            <div class="welcome-caption-container">
-                                <h2 class="highlighted-text">Hello!</h2>
-                                <div class="welcome-caption">
-                                    <h1 class="welcome-caption-title">I'm <span class="highlighted-text" id="welcome-title">Samuel Olawumi</span></h1>
-                                    <p class="welcome-caption-subtitle" id="welcome-subtitle">A Frontend Developer</p>
-                                </div>
-                                <p class="call-to-action-container">
-                                        <a href="mailto:samuelolawumi65@gmail.com" target="_blank">
-                                            <button class="call-to-action colored-btn">
-                                                HIRE ME
-                                            </button>
-                                        </a>
-                                        <a href="#projects">
-                                            <button class="call-to-action transparent-btn">
-                                                MY WORKS
-                                            </button>
-                                        </a>
-                                </p>
-                            </div>
-                            <img src="./images/professional-pic.png" class="d-block introduction-picture" alt="Professional Picture">
-                        </div>
-                    </div>
-            </section>
-            <section class="about section" id="about">
-                <div class="about-container container">
-                    <img class="about-image col-md-6" src="./images/casual-pic2.png"/>
-                    <div class="about-text-container title-text-container col-md-6">
-                        <div class="container">
-                            <h1 class="title-text-top">
-                                About Me
-                            </h1>
-                            <h1 class="title-text-background">
-                                About
-                            </h1>
-                            <p class="title-text-description">
-                                I am a skilled frontend web developer specializing in
-                                creating responsive, user-friendly websites with modern
-                                technologies and creative design.
-                            </p>
-                            <ul class="about-list">
-                                <li class="about-list-item">
-                                    <span class="about-list-item-label">Name: </span>
-                                    <span>Olawumi Samuel Jesujoba</span>
-                                </li>
-                                <li class="about-list-item">
-                                    <span class="about-list-item-label">Date of birth:</span>
-                                    <span>January 22, 2022</span>
-                                </li>
-                                <li class="about-list-item">
-                                    <span class="about-list-item-label">Address: </span>
-                                    <span>Abeokuta 110121 Nigeria </span>
-                                </li>
-                                <li class="about-list-item">
-                                    <span class="about-list-item-label">Zip Code: </span>
-                                    <span>110121</span>
-                                </li>
-                                <li class="about-list-item">
-                                    <span class="about-list-item-label">Email: </span>
-                                    <span>samuelolawumi65@gmail</span>
-                                </li>
-                                <li class="about-list-item">
-                                    <span class="about-list-item-label">Phone: </span>
-                                    <span>+234 70 6809 0383</span>
-                                </li>
-                            </ul>
-                            <div class="cv-download">
-                                <p class="cv-download-caption">
-                                    <span class="highlighted-text">Many</span> Projects complete
-                                </p>
-                                <a href="./samuel_resume.pdf" download="samuel_resume">
-                                    <button class="colored-btn cv-download-btn">
-                                        DOWNLOAD CV
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="home section" id="home">
+          <div class="home-container">
+            <div class="welcome">
+              <div class="hero-overlay"></div>
+              <div class="welcome-caption-container">
+                <h2 class="highlighted-text">Hello!</h2>
+                <div class="welcome-caption">
+                  <h1 class="welcome-caption-title">
+                    I'm
+                    <span class="highlighted-text" id="welcome-title"
+                      >Samuel Olawumi</span
+                    >
+                  </h1>
+                  <p class="welcome-caption-subtitle" id="welcome-subtitle">
+                    A Frontend Developer
+                  </p>
                 </div>
-            </section>
-            <section class="resume section" id="resume">
-                <div class="resume-container container">
-                    <div class="resume-text-container title-text-container pb-5 px-4">
-                        <div class="container">
-                            <h1 class="title-text-top text-center">
-                                Resume
-                            </h1>
-                            <h1 class="title-text-background text-center">
-                                Resume
-                            </h1>
-                            <p class="resume-description title-text-description">
-                                I am a skilled frontend web developer specializing in
-                                creating responsive, user-friendly websites with modern
-                                technologies and creative design.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="resume-cards-container row">
-                        <div class="col-md-6">
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class="fa-solid fa-laptop-code fa-icon"></i>
-                                <span class="highlighted-text date">July, 2024</span>
-                                <h2 class="resume-certification-name">Software Development</h2>
-                                <span class="resume-institution-name highlighted-text">SPRINGPOD, UK</span>
-                                <p class="resume-certification-description">
-                                    I participated in Springpod's Software Development Virtual Work 
-                                    Experience, gaining a solid understanding of software development 
-                                    concepts, career pathways, and necessary skills. I applied this 
-                                    knowledge through quizzes and activities, interacted with industry 
-                                    professionals in webinars, and learned key employability and transferable
-                                     skills aligned with employer expectations.
-                                </p>
-                            </div>
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class="fa-brands fa-free-code-camp fa-icon"></i>
-                                <span class="highlighted-text date">May, 2024</span>
-                                <h2 class="resume-certification-name">Legacy JavaScript Algorithms and Data Structures</h2>
-                                <span class="resume-institution-name highlighted-text">FREECODECAMP</span>
-                                <p class="resume-certification-description">
-                                    I completed the JavaScript Algorithms and Data Structures certification 
-                                    on freeCodeCamp, where I learned core JavaScript concepts, including ES6, 
-                                    object-oriented programming, and functional programming. I also gained proficiency
-                                    in working with algorithms, data structures, and handling complex coding challenges
-                                    effectively.
-                                </p>
-                            </div>
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class="fa-brands fa-js fa-icon"></i>
-                                <span class="highlighted-text date">August, 2023 </span>
-                                <h2 class="resume-certification-name">JavaScript Intermediate</h2>
-                                <span class="resume-institution-name highlighted-text">SOLOLEARN</span>
-                                <p class="resume-certification-description">
-                                    In the "JavaScript Intermediate" course on SoloLearn, I advanced my 
-                                    understanding of JavaScript by diving into more complex topics such as
-                                    object-oriented programming, asynchronous programming, DOM manipulation,
-                                    and handling events. The course also covered best practices in coding,
-                                    enhancing my ability to build dynamic and interactive web applications.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class="fa-solid fa-icon fa-globe"></i>
-                                <span class="highlighted-text date">July, 2024</span>
-                                <h2 class="resume-certification-name">HTML, CSS, and JavaScript for Web Developers</h2>
-                                <span class="resume-institution-name highlighted-text">JOHN HOPKINS UNIVERSITY, US</span>
-                                <p class="resume-certification-description">
-                                    I completed a specialization in HTML, CSS, and JavaScript 
-                                    for Web Developers, mastering web development essentials like HTML5,
-                                    CSS3, responsive design, and JavaScript. I learned to build dynamic
-                                    web applications with server-side functionality, covering topics from
-                                    static site coding to using Ajax for interactive web apps.
-                                </p>
-                            </div>
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class="fa-brands fa-python fa-icon"></i>
-                                <span class="highlighted-text date">March, 2024</span>
-                                <h2 class="resume-certification-name">Introduction to Software Engineering</h2>
-                                <span class="resume-institution-name highlighted-text">IBM VIA COURSERA</span>
-                                <p class="resume-certification-description">
-                                    In the IBM "Introduction to Software Engineering" course,
-                                    I learned the fundamentals of software engineering, including 
-                                    software development methodologies, project management principles,
-                                    and the software development lifecycle. The course also covered best 
-                                    practices for design, testing, and maintenance, preparing me for real-world
-                                    software engineering roles
-                                </p>
-                            </div>
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class=" fa-brands fa-free-code-camp fa-icon"></i>
-                                <span class="highlighted-text date">August, 2024</span>
-                                <h2 class="resume-certification-name">Responsive Web Design</h2>
-                                <span class="resume-institution-name highlighted-text">FREECODECAMP</span>
-                                <p class="resume-certification-description">
-                                    In FreeCodeCamp's Responsive Web Design course, I learned how to build web pages that seamlessly adapt to different screen sizes and devices. I mastered using flexible layouts, CSS media queries, and fluid grids to create responsive designs. The course also enhanced my skills in HTML, CSS, Flexbox, and Grid, ensuring that my web pages look and function well on desktops, tablets, and mobile phones.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="resume-card card p-3 mb-3 bg-dark text-white">
-                                <i class="fa-solid fa-graduation-cap fa-icon"></i>
-                                <span class="highlighted-text date">September 2022 - Present </span>
-                                <h2 class="resume-certification-name">Bachelor's Degree in Software Engineering</h2>
-                                <span class="resume-institution-name highlighted-text">MOUNTAIN TOP UNIVERSITY, NIGERIA</span>
-                                <p class="resume-certification-description">
-                                    Since September 2022, I've been pursuing a Bachelor's Degree 
-                                    in Software Engineering at Mountain Top University, where I've gained
-                                    a solid foundation in core programming languages like Python and JavaScript.
-                                     I've studied algorithms and data structures, which have enhanced my problem-solving
-                                    abilities. My coursework has included software development methodologies,
-                                    such as Agile and DevOps, and system design principles that emphasize scalability and efficiency.
-                                    I've worked on several projects, including web and mobile applications, 
-                                    where I've applied my knowledge of databases and user interface design. This hands-on experience 
-                                    has prepared me to address real-world software engineering challenges effectively.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resume-cv-download-container row">
-                        <div class="resume-cv-download col-md-6">
-                            <a href="./samuel_resume.pdf" download="samuel_resume">
-                                <button class="colored-btn cv-download-btn">
-                                    DOWNLOAD CV
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="services section" id="services">
-                <div class="services-container container">
-                    <div class="services-text-container title-text-container pb-5 px-4">
-                        <div class="container">
-                            <h1 class="title-text-top text-center">
-                                Services
-                            </h1>
-                            <h1 class="title-text-background text-center">
-                                Services
-                            </h1>
-                            <p class="services-description title-text-description">
-                                I offer website and app development, frontend development, 
-                                SEO, and maintenance services, ensuring a user-friendly, 
-                                visually appealing, and optimized online presence with 
-                                ongoing support for your digital platforms.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services-tile-container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="services-card">
-                                    <span class="services-card-icon">
-                                        <i class="flaticon-ideas services-icon"></i>
-                                    </span>
-                                    <h3 class="services-card-description">WEB DEVELOPER</h3>
-                                    <hr class="services-card-line">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="services-card">
-                                    <span class="services-card-icon">
-                                        <i class="flaticon-idea services-icon"></i>
-                                    </span>
-                                    <h3 class="services-card-description">FRONTEND DEVELOPER</h3>
-                                    <hr class="services-card-line">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="services-card">
-                                    <span class="services-card-icon">
-                                        <i class="flaticon-ux-design  services-icon"></i>
-                                    </span>
-                                    <h3 class="services-card-description">UI/UX DESIGNER</h3>
-                                    <hr class="services-card-line">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="services-card">
-                                    <span class="services-card-icon">
-                                        <i class="flaticon-innovation services-icon"></i>
-                                    </span>
-                                    <h3 class="services-card-description">WEBSITE MAINTENANCE</h3>
-                                    <hr class="services-card-line">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="services-card">
-                                    <span class="services-card-icon">
-                                        <i class="flaticon-web-design services-icon"></i>
-                                    </span>
-                                    <h3 class="services-card-description">RESPONSIVE WEB DESIGN</h3>
-                                    <hr class="services-card-line">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="services-card">
-                                    <span class="services-card-icon">
-                                        <i class="flaticon-innovation services-icon"></i>
-                                    </span>
-                                    <h3 class="services-card-description">SOFTWARE ENGINEER</h3>
-                                    <hr class="services-card-line">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="skills section" id="skills">
-                <div class="skills-text-container title-text-container pb-5 px-4">
-                    <div class="container">
-                        <h1 class="title-text-top text-center">
-                            My Skills
-                        </h1>
-                        <h1 class="title-text-background text-center">
-                            Skills
-                        </h1>
-                        <p class="services-description title-text-description">
-                            With extensive experience in Frontend Development, 
-                            I possess a broad skill set, ensuring the creation of dynamic, 
-                            user-friendly, and visually appealing web solutions.
-                        </p>
-                    </div>
-                </div>
-                <div class="skills-container">
-                    <div class="row">
-                        <div class="col-md-6 skill">
-                            <h3 class="skill-caption">
-                                HTML5 
-                                <span class="percentage">95%</span>
-                            </h3>
-                            <div class="progress skill-progress-bar" role="progressbar">
-                                <div class="progress-bar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 skill">
-                            <h3 class="skill-caption">
-                                CSS3
-                                <span class="percentage">90%</span>
-                            </h3>
-                            <div class="progress skill-progress-bar" role="progressbar">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 skill">
-                            <h3 class="skill-caption">
-                                JavaScript 
-                                <span class="percentage">75%</span>
-                            </h3>
-                            <div class="progress skill-progress-bar" role="progressbar">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 skill">
-                            <h3 class="skill-caption">
-                                Bootstrap 
-                                <span class="percentage">80%</span>
-                            </h3>
-                            <div class="progress skill-progress-bar" role="progressbar">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 skill">
-                            <h3 class="skill-caption">
-                                React.js
-                                <span class="percentage">85%</span>
-                            </h3>
-                            <div class="progress skill-progress-bar" role="progressbar">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 skill">
-                            <h3 class="skill-caption">
-                                Responsive Web Design 
-                                <span class="percentage">100%</span>
-                            </h3>
-                            <div class="progress skill-progress-bar" role="progressbar">
-                                <div class="progress-bar" style="width: 100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="projects section" id="projects">
-                <div class="projects-text-container title-text-container pb-5 px-4">
-                    <div class="container">
-                        <h1 class="title-text-top text-center">
-                            My Projects
-                        </h1>
-                        <h1 class="title-text-background text-center">
-                            Projects
-                        </h1>
-                        <p class="services-description title-text-description">
-                            Showcasing a diverse portfolio of completed projects, 
-                            highlighting my expertise and dedication to delivering 
-                            exceptional results.
-                        </p>
-                    </div>
-                </div>
-                <div class=" project-tile-container">
-                    <div class="row col-md-12">
-                        <div class="project-tile col-md-12">
-                            <iframe
-                                src="https://samdahboss.github.io/chapelTimerApp/" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe timer-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://samdahboss.github.io/chapelTimerApp/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-md-12">
-                        <div class="project-tile col-md-7">
-                            <iframe 
-                                src="https://samdahboss.github.io/FCC-PRODUCT-LANDING-PAGE/" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://samdahboss.github.io/FCC-PRODUCT-LANDING-PAGE/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-tile col-md-5">
-                            <iframe 
-                                src="https://wumicodesgame.netlify.app/" 
-                                frameborder="0" 
-                                class="my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://wumicodesgame.netlify.app/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-md-12">
-                        <div class="project-tile col-md-5">
-                            <iframe 
-                                src="https://wumicodes-new-todo-app.netlify.app/" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://wumicodes-new-todo-app.netlify.app/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-tile col-md-7">
-                            <iframe 
-                                src="https://teamtrackingapp.netlify.app/" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://teamtrackingapp.netlify.app/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-md-12">
-                        <div class="project-tile col-md-7">
-                            <iframe 
-                                src="https://samdahboss.github.io/vortGadgetsClone/" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://samdahboss.github.io/vortGadgetsClone/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-tile col-md-5">
-                            <iframe 
-                                src="https://samdahboss.github.io/TekkTopiaTask1/" 
-                                frameborder="0" 
-                                class="col-md-12 my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://samdahboss.github.io/TekkTopiaTask1/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-md-12">
-                        <div class="project-tile col-md-5">
-                            <iframe 
-                                src="https://samdahboss.github.io/ip_address_tracker/" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://samdahboss.github.io/ip_address_tracker/" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-tile col-md-7">
-                            <iframe 
-                                src="https://samdahboss.github.io/microsoft_clone/#" 
-                                frameborder="0" 
-                                class=" my-3 project-tile-iframe"
-                            >
-                            </iframe>
-                            <div class="project-tile-cover-sheet">
-                                <a href="https://samdahboss.github.io/microsoft_clone/#" target="_blank">
-                                    <button class="colored-btn project-tile-btn call-to-action">
-                                        VISIT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contact section" id="contact">
-                <div class="contact-text-container title-text-container pb-5 px-4">
-                    <div class="container">
-                        <h1 class="title-text-top text-center">
-                            Contact Me
-                        </h1>
-                        <h1 class="title-text-background text-center">
-                            Contact
-                        </h1>
-                        <p class="contact-description title-text-description">
-                            Get in touch to discuss your project needs 
-                            and discover how I can help bring your vision to life.
-                        </p>
-                    </div>
-                </div>
-                <div class="contact-card-container row">
-                    <div class="col-md-3 contact-card">
-                        <div class="card p-4">
-                            <div class="contact-card-icon">
-                                <span class="icon-whatsapp">
-    
-                                </span>
-                            </div>
-                            <h3 class="contact-card-title">WHATSAPP</h3>
-                            <p class="contact-card-description">
-                                <a href="https://wa.me/2347068090383">+234 70 6809 0383</a>
-                            </p>
-                        </div>                        
-                    </div>
-                    <div class="col-md-3 contact-card">
-                        <div class="card">
-                            <div class="contact-card-icon">
-                                <span class="icon-phone2">
-
-                                </span>
-                            </div>
-                            <h3 class="contact-card-title">CONTACT NUMBER</h3>
-                            <p class="contact-card-description">
-                                <a href="tel:+2347068090383">+234 70 6809 0383</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 contact-card">
-                        <div class="card">
-                            <div class="contact-card-icon">
-                                <span class="icon-paper-plane">
-    
-                                </span>
-                            </div>
-                            <h3 class="contact-card-title">EMAIL ADDRESS</h3>
-                            <p class="contact-card-description">
-                                <a href="mailto:samuelolawumi65@gmail.com" class="contact-email">samuelolawumi65@gmail</a>
-                            </p>
-                        </div>                        
-                    </div>
-                    <div class="col-md-3 contact-card">
-                        <div class="card">
-                            <div class="contact-card-icon">
-                                <span class="icon-globe">
-    
-                                </span>
-                            </div>
-                            <h3 class="contact-card-title">WEBSITE</h3>
-                            <p class="contact-card-description">
-                                <a href="https://jesujoba.netlify.app">jesujoba.netlify.app</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-container container">
-                    <form action="mailto:samuelolawumi65@gmail.com" class="contact-form col-md-12 row">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                        <input type="email" name="email" id="contact-email" class="contact-input" placeholder="Your Email">
-                        <input type="text" name="subject" class="contact-input" placeholder="Subject">
-                        <textarea name="message" placeholder="Message" class="contact-textarea" rows="7"></textarea>
-                         <button class="colored-btn cv-download-btn contact-submit" type="submit" id="contact-submit">
-                            SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container footer-container">
-                <div class="footer-info col-md-12 row">
-                    <div class="col-md-3">
-                        <h3 class="footer-heading">About</h3>
-                        <p class="footer-about footer-list-item">
-                            I am a skilled frontend web developer specializing in creating responsive, 
-                            user-friendly websites with modern technologies and creative design.
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="footer-heading">Links</h3>
-                        <ul class="links-footer-list footer-list">
-                            <li class="links-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                <a href="#home" class="footer-list-item-link">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="links-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                <a href="#about" class="footer-list-item-link"> About</a>
-                            </li>
-                            <li class="links-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                <a href="#services" class="footer-list-item-link"> Services</a>
-                            </li>
-                            <li class="links-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                <a href="#projects" class="footer-list-item-link"> Projects</a>
-                            </li>
-                            <li class="links-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                <a href="#contact" class="footer-list-item-link"> Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="footer-heading">Services</h3>
-                        <ul class="services-footer-list footer-list">
-                            <li class="services-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                Web Development
-                            </li>
-                            <li class="services-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                UI/UX Design
-                            </li>
-                            <li class="services-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                Frontend Development
-                            </li>
-                            <li class="services-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                Website Maintenance
-                            </li>
-                            <li class="services-footer-list-item footer-list-item">
-                                <span class="icon-long-arrow-right footer-list-item-icon"></span>
-                                Responsive Web Design
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="footer-heading">Have Questions?</h3>
-                        <ul class="questions-footer-list footer-list">
-                            <li class="questions-footer-list-item footer-list-item">                                
-                                <span class="icon icon-map-marker"></span>
-                                <a href="#" class="footer-list-item-link">
-                                    Abeokuta 110121 Nigeria
-                                </a>                                
-                            </li>
-                            <li class="questions-footer-list-item footer-list-item">                                
-                                <span class="icon-whatsapp"></span>
-                                <a href="https://wa.me/2347068090383" class="footer-list-item-link">
-                                    +234 70 6809 0383
-                                </a>                                
-                            </li>
-                            <li class="questions-footer-list-item footer-list-item">
-                                <span class="icon icon-envelope"></span>
-                                <a href="mailto:samuelolawumi65@gmail.com" class="footer-list-item-link">
-                                    +234 70 6809 0383
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-social-links col-md-6 row">
-                    <div class="footer-social-icon col-md-4 align-items-md-baseline">
-                        <a href="https://github.com/samdahboss" class="footer-social-icon-link">
-                            <span class="icon-github"></span>
-                        </a>
-                        @samdahboss
-                    </div>
-                    <div class="footer-social-icon col-md-4">
-                        <a href="https://www.linkedin.com/in/WumiCodes" class="footer-social-icon-link">
-                            <span class="icon-linkedin"></span>
-                        </a>
-                        @WumiCodes
-                    </div>
-                    <div class="footer-social-icon col-md-4 ">
-                        <a href="https://www.instagram.com/jesujobaa/" class="footer-social-icon-link">
-                            <span class="icon-instagram"></span>
-                        </a>
-                        @jesujobaa
-                    </div>
-                </div>
-                <p class="footer-copyright-statement">Copyright ©2024 All rights reserved | This Website is made by WumiCodes</p>
+                <p class="call-to-action-container">
+                  <a href="mailto:samuelolawumi65@gmail.com" target="_blank">
+                    <button class="call-to-action colored-btn">HIRE ME</button>
+                  </a>
+                  <a href="#projects">
+                    <button class="call-to-action transparent-btn">
+                      MY WORKS
+                    </button>
+                  </a>
+                </p>
+              </div>
+              <img
+                src="./images/hero.png"
+                class="d-block introduction-picture"
+                alt="Professional Picture"
+              />
             </div>
-        </footer>
+          </div>
+        </section>
+        <section class="about section" id="about">
+          <div class="about-container container">
+            <img class="about-image col-md-6" src="./images/aboutimg.png" />
+            <div class="about-text-container title-text-container col-md-6">
+              <div class="container">
+                <h1 class="title-text-top">About Me</h1>
+                <h1 class="title-text-background">About</h1>
+                <p class="title-text-description">
+                  I am a skilled frontend web developer specializing in creating
+                  responsive, user-friendly websites with modern technologies
+                  and creative design.
+                </p>
+                <ul class="about-list">
+                  <li class="about-list-item">
+                    <span class="about-list-item-label">Name: </span>
+                    <span>Olawumi Samuel Jesujoba</span>
+                  </li>
+                  <li class="about-list-item">
+                    <span class="about-list-item-label">Address: </span>
+                    <span>Abeokuta 110121 Nigeria </span>
+                  </li>
+                  <li class="about-list-item">
+                    <span class="about-list-item-label">Zip Code: </span>
+                    <span>110121</span>
+                  </li>
+                  <li class="about-list-item">
+                    <span class="about-list-item-label">Email: </span>
+                    <span>samuelolawumi65@gmail</span>
+                  </li>
+                  <li class="about-list-item">
+                    <span class="about-list-item-label">Phone: </span>
+                    <span>+234 70 6809 0383</span>
+                  </li>
+                </ul>
+                <div class="cv-download">
+                  <p class="cv-download-caption">
+                    <span class="highlighted-text">Many</span> Projects complete
+                  </p>
+                  <a href="./SamuelOlawumiResume.pdf" download="SamuelOlawumiResume">
+                    <button class="colored-btn cv-download-btn">
+                      DOWNLOAD CV
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="resume section" id="resume">
+          <div class="resume-container container">
+            <div class="resume-text-container title-text-container pb-5 px-4">
+              <div class="container">
+                <h1 class="title-text-top text-center">Resume</h1>
+                <h1 class="title-text-background text-center">Resume</h1>
+                <p class="resume-description title-text-description">
+                  I am a skilled frontend web developer specializing in creating
+                  responsive, user-friendly websites with modern technologies
+                  and creative design.
+                </p>
+              </div>
+            </div>
+            <div class="resume-cards-container row">
+              <div class="col-md-6">
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-solid fa-laptop-code fa-icon"></i>
+                  <span class="highlighted-text date">July, 2024</span>
+                  <h2 class="resume-certification-name">
+                    Software Development
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >SPRINGPOD, UK</span
+                  >
+                  <p class="resume-certification-description">
+                    I participated in Springpod's Software Development Virtual
+                    Work Experience, gaining a solid understanding of software
+                    development concepts, career pathways, and necessary skills.
+                    I applied this knowledge through quizzes and activities,
+                    interacted with industry professionals in webinars, and
+                    learned key employability and transferable skills aligned
+                    with employer expectations.
+                  </p>
+                </div>
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-brands fa-free-code-camp fa-icon"></i>
+                  <span class="highlighted-text date">May, 2024</span>
+                  <h2 class="resume-certification-name">
+                    Legacy JavaScript Algorithms and Data Structures
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >FREECODECAMP</span
+                  >
+                  <p class="resume-certification-description">
+                    I completed the JavaScript Algorithms and Data Structures
+                    certification on freeCodeCamp, where I learned core
+                    JavaScript concepts, including ES6, object-oriented
+                    programming, and functional programming. I also gained
+                    proficiency in working with algorithms, data structures, and
+                    handling complex coding challenges effectively.
+                  </p>
+                </div>
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-brands fa-js fa-icon"></i>
+                  <span class="highlighted-text date">August, 2023 </span>
+                  <h2 class="resume-certification-name">
+                    JavaScript Intermediate
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >SOLOLEARN</span
+                  >
+                  <p class="resume-certification-description">
+                    In the "JavaScript Intermediate" course on SoloLearn, I
+                    advanced my understanding of JavaScript by diving into more
+                    complex topics such as object-oriented programming,
+                    asynchronous programming, DOM manipulation, and handling
+                    events. The course also covered best practices in coding,
+                    enhancing my ability to build dynamic and interactive web
+                    applications.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-solid fa-icon fa-globe"></i>
+                  <span class="highlighted-text date">July, 2024</span>
+                  <h2 class="resume-certification-name">
+                    HTML, CSS, and JavaScript for Web Developers
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >JOHN HOPKINS UNIVERSITY, US</span
+                  >
+                  <p class="resume-certification-description">
+                    I completed a specialization in HTML, CSS, and JavaScript
+                    for Web Developers, mastering web development essentials
+                    like HTML5, CSS3, responsive design, and JavaScript. I
+                    learned to build dynamic web applications with server-side
+                    functionality, covering topics from static site coding to
+                    using Ajax for interactive web apps.
+                  </p>
+                </div>
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-brands fa-python fa-icon"></i>
+                  <span class="highlighted-text date">March, 2024</span>
+                  <h2 class="resume-certification-name">
+                    Introduction to Software Engineering
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >IBM VIA COURSERA</span
+                  >
+                  <p class="resume-certification-description">
+                    In the IBM "Introduction to Software Engineering" course, I
+                    learned the fundamentals of software engineering, including
+                    software development methodologies, project management
+                    principles, and the software development lifecycle. The
+                    course also covered best practices for design, testing, and
+                    maintenance, preparing me for real-world software
+                    engineering roles
+                  </p>
+                </div>
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-brands fa-free-code-camp fa-icon"></i>
+                  <span class="highlighted-text date">August, 2024</span>
+                  <h2 class="resume-certification-name">
+                    Responsive Web Design
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >FREECODECAMP</span
+                  >
+                  <p class="resume-certification-description">
+                    In FreeCodeCamp's Responsive Web Design course, I learned
+                    how to build web pages that seamlessly adapt to different
+                    screen sizes and devices. I mastered using flexible layouts,
+                    CSS media queries, and fluid grids to create responsive
+                    designs. The course also enhanced my skills in HTML, CSS,
+                    Flexbox, and Grid, ensuring that my web pages look and
+                    function well on desktops, tablets, and mobile phones.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="resume-card card p-3 mb-3 bg-dark text-white">
+                  <i class="fa-solid fa-graduation-cap fa-icon"></i>
+                  <span class="highlighted-text date"
+                    >September 2022 - Present
+                  </span>
+                  <h2 class="resume-certification-name">
+                    Bachelor's Degree in Software Engineering
+                  </h2>
+                  <span class="resume-institution-name highlighted-text"
+                    >MOUNTAIN TOP UNIVERSITY, NIGERIA</span
+                  >
+                  <p class="resume-certification-description">
+                    Since September 2022, I've been pursuing a Bachelor's Degree
+                    in Software Engineering at Mountain Top University, where
+                    I've gained a solid foundation in core programming languages
+                    like Python and JavaScript. I've studied algorithms and data
+                    structures, which have enhanced my problem-solving
+                    abilities. My coursework has included software development
+                    methodologies, such as Agile and DevOps, and system design
+                    principles that emphasize scalability and efficiency. I've
+                    worked on several projects, including web and mobile
+                    applications, where I've applied my knowledge of databases
+                    and user interface design. This hands-on experience has
+                    prepared me to address real-world software engineering
+                    challenges effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="resume-cv-download-container row">
+              <div class="resume-cv-download col-md-6">
+                <a href="./samuel_resume.pdf" download="samuel_resume">
+                  <button class="colored-btn cv-download-btn">
+                    DOWNLOAD CV
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services section" id="services">
+          <div class="services-container container">
+            <div class="services-text-container title-text-container pb-5 px-4">
+              <div class="container">
+                <h1 class="title-text-top text-center">Services</h1>
+                <h1 class="title-text-background text-center">Services</h1>
+                <p class="services-description title-text-description">
+                  I offer website and app development, frontend development,
+                  SEO, and maintenance services, ensuring a user-friendly,
+                  visually appealing, and optimized online presence with ongoing
+                  support for your digital platforms.
+                </p>
+              </div>
+            </div>
+            <div class="services-tile-container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="services-card">
+                    <span class="services-card-icon">
+                      <i class="flaticon-ideas services-icon"></i>
+                    </span>
+                    <h3 class="services-card-description">WEB DEVELOPER</h3>
+                    <hr class="services-card-line" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+                    <span class="services-card-icon">
+                      <i class="flaticon-idea services-icon"></i>
+                    </span>
+                    <h3 class="services-card-description">
+                      FRONTEND DEVELOPER
+                    </h3>
+                    <hr class="services-card-line" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+                    <span class="services-card-icon">
+                      <i class="flaticon-ux-design services-icon"></i>
+                    </span>
+                    <h3 class="services-card-description">UI/UX DESIGNER</h3>
+                    <hr class="services-card-line" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="services-card">
+                    <span class="services-card-icon">
+                      <i class="flaticon-innovation services-icon"></i>
+                    </span>
+                    <h3 class="services-card-description">
+                      WEBSITE MAINTENANCE
+                    </h3>
+                    <hr class="services-card-line" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+                    <span class="services-card-icon">
+                      <i class="flaticon-web-design services-icon"></i>
+                    </span>
+                    <h3 class="services-card-description">
+                      RESPONSIVE WEB DESIGN
+                    </h3>
+                    <hr class="services-card-line" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+                    <span class="services-card-icon">
+                      <i class="flaticon-innovation services-icon"></i>
+                    </span>
+                    <h3 class="services-card-description">SOFTWARE ENGINEER</h3>
+                    <hr class="services-card-line" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="skills section" id="skills">
+          <div class="skills-text-container title-text-container pb-5 px-4">
+            <div class="container">
+              <h1 class="title-text-top text-center">My Skills</h1>
+              <h1 class="title-text-background text-center">Skills</h1>
+              <p class="services-description title-text-description">
+                With extensive experience in Frontend Development, I possess a
+                broad skill set, ensuring the creation of dynamic,
+                user-friendly, and visually appealing web solutions.
+              </p>
+            </div>
+          </div>
+          <div class="skills-container">
+            <div class="row">
+              <div class="col-md-6 skill">
+                <h3 class="skill-caption">
+                  HTML5
+                  <span class="percentage">95%</span>
+                </h3>
+                <div class="progress skill-progress-bar" role="progressbar">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="col-md-6 skill">
+                <h3 class="skill-caption">
+                  CSS3
+                  <span class="percentage">90%</span>
+                </h3>
+                <div class="progress skill-progress-bar" role="progressbar">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 skill">
+                <h3 class="skill-caption">
+                  JavaScript
+                  <span class="percentage">75%</span>
+                </h3>
+                <div class="progress skill-progress-bar" role="progressbar">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="col-md-6 skill">
+                <h3 class="skill-caption">
+                  Bootstrap
+                  <span class="percentage">80%</span>
+                </h3>
+                <div class="progress skill-progress-bar" role="progressbar">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 skill">
+                <h3 class="skill-caption">
+                  React.js
+                  <span class="percentage">85%</span>
+                </h3>
+                <div class="progress skill-progress-bar" role="progressbar">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="col-md-6 skill">
+                <h3 class="skill-caption">
+                  Responsive Web Design
+                  <span class="percentage">100%</span>
+                </h3>
+                <div class="progress skill-progress-bar" role="progressbar">
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects section" id="projects">
+          <div class="projects-text-container title-text-container pb-5 px-4">
+            <div class="container">
+              <h1 class="title-text-top text-center">My Projects</h1>
+              <h1 class="title-text-background text-center">Projects</h1>
+              <p class="services-description title-text-description">
+                Showcasing a diverse portfolio of completed projects,
+                highlighting my expertise and dedication to delivering
+                exceptional results.
+              </p>
+            </div>
+          </div>
+          <div class="project-tile-container">
+            <div class="row col-md-12">
+              <div class="project-tile col-md-12">
+                <iframe
+                  src="https://samdahboss.github.io/chapelTimerApp/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe timer-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://samdahboss.github.io/chapelTimerApp/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12">
+              <div class="project-tile col-md-7">
+                <iframe
+                  src="https://samdahboss.github.io/FCC-PRODUCT-LANDING-PAGE/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://samdahboss.github.io/FCC-PRODUCT-LANDING-PAGE/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tile col-md-5">
+                <iframe
+                  src="https://wumicodesgame.netlify.app/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a href="https://wumicodesgame.netlify.app/" target="_blank">
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12">
+              <div class="project-tile col-md-5">
+                <iframe
+                  src="https://wumicodes-new-todo-app.netlify.app/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://wumicodes-new-todo-app.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tile col-md-7">
+                <iframe
+                  src="https://teamtrackingapp.netlify.app/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://teamtrackingapp.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12">
+              <div class="project-tile col-md-7">
+                <iframe
+                  src="https://samdahboss.github.io/vortGadgetsClone/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://samdahboss.github.io/vortGadgetsClone/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tile col-md-5">
+                <iframe
+                  src="https://samdahboss.github.io/TekkTopiaTask1/"
+                  frameborder="0"
+                  class="col-md-12 my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://samdahboss.github.io/TekkTopiaTask1/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12">
+              <div class="project-tile col-md-5">
+                <iframe
+                  src="https://samdahboss.github.io/ip_address_tracker/"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://samdahboss.github.io/ip_address_tracker/"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tile col-md-7">
+                <iframe
+                  src="https://samdahboss.github.io/microsoft_clone/#"
+                  frameborder="0"
+                  class="my-3 project-tile-iframe"
+                >
+                </iframe>
+                <div class="project-tile-cover-sheet">
+                  <a
+                    href="https://samdahboss.github.io/microsoft_clone/#"
+                    target="_blank"
+                  >
+                    <button class="colored-btn project-tile-btn call-to-action">
+                      VISIT
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact section" id="contact">
+          <div class="contact-text-container title-text-container pb-5 px-4">
+            <div class="container">
+              <h1 class="title-text-top text-center">Contact Me</h1>
+              <h1 class="title-text-background text-center">Contact</h1>
+              <p class="contact-description title-text-description">
+                Get in touch to discuss your project needs and discover how I
+                can help bring your vision to life.
+              </p>
+            </div>
+          </div>
+          <div class="contact-card-container row">
+            <div class="col-md-3 contact-card">
+              <div class="card p-4">
+                <div class="contact-card-icon">
+                  <span class="icon-whatsapp"> </span>
+                </div>
+                <h3 class="contact-card-title">WHATSAPP</h3>
+                <p class="contact-card-description">
+                  <a href="https://wa.me/2347068090383">+234 70 6809 0383</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 contact-card">
+              <div class="card">
+                <div class="contact-card-icon">
+                  <span class="icon-phone2"> </span>
+                </div>
+                <h3 class="contact-card-title">CONTACT NUMBER</h3>
+                <p class="contact-card-description">
+                  <a href="tel:+2347068090383">+234 70 6809 0383</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 contact-card">
+              <div class="card">
+                <div class="contact-card-icon">
+                  <span class="icon-paper-plane"> </span>
+                </div>
+                <h3 class="contact-card-title">EMAIL ADDRESS</h3>
+                <p class="contact-card-description">
+                  <a
+                    href="mailto:samuelolawumi65@gmail.com"
+                    class="contact-email"
+                    >samuelolawumi65@gmail</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 contact-card">
+              <div class="card">
+                <div class="contact-card-icon">
+                  <span class="icon-globe"> </span>
+                </div>
+                <h3 class="contact-card-title">WEBSITE</h3>
+                <p class="contact-card-description">
+                  <a href="https://jesujoba.netlify.app"
+                    >jesujoba.netlify.app</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container container">
+            <form
+              action="mailto:samuelolawumi65@gmail.com"
+              class="contact-form col-md-12 row"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                class="contact-input"
+              />
+              <input
+                type="email"
+                name="email"
+                id="contact-email"
+                class="contact-input"
+                placeholder="Your Email"
+              />
+              <input
+                type="text"
+                name="subject"
+                class="contact-input"
+                placeholder="Subject"
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                class="contact-textarea"
+                rows="7"
+              ></textarea>
+              <button
+                class="colored-btn cv-download-btn contact-submit"
+                type="submit"
+                id="contact-submit"
+              >
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container footer-container">
+          <div class="footer-info col-md-12 row">
+            <div class="col-md-3">
+              <h3 class="footer-heading">About</h3>
+              <p class="footer-about footer-list-item">
+                I am a skilled frontend web developer specializing in creating
+                responsive, user-friendly websites with modern technologies and
+                creative design.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Links</h3>
+              <ul class="links-footer-list footer-list">
+                <li class="links-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  <a href="#home" class="footer-list-item-link"> Home </a>
+                </li>
+                <li class="links-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  <a href="#about" class="footer-list-item-link"> About</a>
+                </li>
+                <li class="links-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  <a href="#services" class="footer-list-item-link">
+                    Services</a
+                  >
+                </li>
+                <li class="links-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  <a href="#projects" class="footer-list-item-link">
+                    Projects</a
+                  >
+                </li>
+                <li class="links-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  <a href="#contact" class="footer-list-item-link"> Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Services</h3>
+              <ul class="services-footer-list footer-list">
+                <li class="services-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  Web Development
+                </li>
+                <li class="services-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  UI/UX Design
+                </li>
+                <li class="services-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  Frontend Development
+                </li>
+                <li class="services-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  Website Maintenance
+                </li>
+                <li class="services-footer-list-item footer-list-item">
+                  <span
+                    class="icon-long-arrow-right footer-list-item-icon"
+                  ></span>
+                  Responsive Web Design
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Have Questions?</h3>
+              <ul class="questions-footer-list footer-list">
+                <li class="questions-footer-list-item footer-list-item">
+                  <span class="icon icon-map-marker"></span>
+                  <a href="#" class="footer-list-item-link">
+                    Abeokuta 110121 Nigeria
+                  </a>
+                </li>
+                <li class="questions-footer-list-item footer-list-item">
+                  <span class="icon-whatsapp"></span>
+                  <a
+                    href="https://wa.me/2347068090383"
+                    class="footer-list-item-link"
+                  >
+                    +234 70 6809 0383
+                  </a>
+                </li>
+                <li class="questions-footer-list-item footer-list-item">
+                  <span class="icon icon-envelope"></span>
+                  <a
+                    href="mailto:samuelolawumi65@gmail.com"
+                    class="footer-list-item-link"
+                  >
+                    +234 70 6809 0383
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social-links col-md-6 row">
+            <div class="footer-social-icon col-md-4 align-items-md-baseline">
+              <a
+                href="https://github.com/samdahboss"
+                class="footer-social-icon-link"
+              >
+                <span class="icon-github"></span>
+              </a>
+              @samdahboss
+            </div>
+            <div class="footer-social-icon col-md-4">
+              <a
+                href="https://www.linkedin.com/in/WumiCodes"
+                class="footer-social-icon-link"
+              >
+                <span class="icon-linkedin"></span>
+              </a>
+              @WumiCodes
+            </div>
+            <div class="footer-social-icon col-md-4">
+              <a
+                href="https://www.instagram.com/jesujobaa/"
+                class="footer-social-icon-link"
+              >
+                <span class="icon-instagram"></span>
+              </a>
+              @jesujobaa
+            </div>
+          </div>
+          <p class="footer-copyright-statement">
+            Copyright ©2024 All rights reserved | This Website is made by
+            WumiCodes
+          </p>
+        </div>
+      </footer>
     </div>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-        crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
